@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  serverExternalPackages: ['discord.js', '@discordjs/ws'],
+  experimental: {
+    serverComponentsExternalPackages: ['discord.js', '@discordjs/ws', 'zlib-sync'],
+  },
 };
 
 export default nextConfig;
